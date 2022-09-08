@@ -569,6 +569,19 @@ table {
   margin-bottom: 40px;
 }
 
+.news .view-more {
+  display: block;
+  text-align: center;
+  background: #271D1B;
+  max-width: 120px;
+  margin: 23px auto;
+  padding: 12px 0;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .news .news-box {
   background: white;
   max-width: -webkit-max-content;
