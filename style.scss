@@ -414,6 +414,9 @@ table {
         flex-wrap: wrap;
 
         .service {
+            img {
+                max-width: 387px;
+            }
             flex: 0 0 33.33%;
             display: flex;
             justify-content: center;

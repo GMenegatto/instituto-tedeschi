@@ -505,6 +505,10 @@ table {
   margin-bottom: 30px;
 }
 
+.mentoria .services .service img {
+  max-width: 387px;
+}
+
 .our-insta {
   background: url("assets/grey-paper-texture.png");
 }
