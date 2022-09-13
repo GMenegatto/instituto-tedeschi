@@ -181,6 +181,7 @@ table {
 }
 
 .banner header nav a {
+  text-decoration: none;
   padding: 0 10px;
   color: white;
   font-size: 20px;
@@ -199,6 +200,24 @@ table {
   bottom: 0;
   bottom: -5px;
   left: -9px;
+  width: 100vw;
+}
+
+.banner .waves img {
+  width: 101%;
+}
+
+.banner .button-down {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 16px;
 }
 
 .title {
@@ -438,7 +457,7 @@ table {
 .clinic .info-2 .cards .card p {
   color: #271D1B;
   font-size: 16px;
-  margin-bottom: 15px;
+  line-height: 30px;
 }
 
 .clinic .info-3 {
@@ -460,24 +479,84 @@ table {
   max-width: 900px;
 }
 
+.clinic .info-3 .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.clinic .info-3 p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
 .clinic .info-3 .info {
-  margin-top: 40px;
-  padding: 30px 25px;
-  background-color: rgba(255, 255, 255, 0.363);
-  border-radius: 7px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-top: 40px;
+  padding: 30px 36px;
+  background-color: rgba(255, 255, 255, 0.363);
+  border-radius: 7px;
+  flex: 1;
   -webkit-box-shadow: 0px 3px 6px #373f7e0c;
           box-shadow: 0px 3px 6px #373f7e0c;
 }
 
 .clinic .info-3 .info .title {
   font-size: 18px;
+  text-align: left;
+}
+
+.topic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.topic img {
+  margin-top: 11px;
 }
 
 .mentoria .subtitle {
   text-align: center;
+  margin-top: 40px;
+}
+
+.mentoria .mentoria-contact {
+  max-width: 790px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 90px;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  padding: 40px 0;
+}
+
+.mentoria .mentoria-contact .title {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.mentoria .mentoria-contact a {
+  display: block;
+  background-color: #111111;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  margin-top: 25px;
+  border-radius: 2px;
+  padding: 10px 15px;
 }
 
 .mentoria .title2 {
@@ -612,8 +691,18 @@ table {
   margin-bottom: 20px;
 }
 
-.news .news-box span {
+.news .news-box .date {
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
+}
+
+.news .news-box span {
   display: block;
 }
 
@@ -628,5 +717,366 @@ table {
   text-decoration: none;
   font-size: 20px;
   color: #271D1B;
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mapa {
+  background: url("assets/bg-brown.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mapa .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mapa .container .right-side {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.mapa .container .right-side img {
+  display: block;
+  max-width: 100%;
+}
+
+.mapa .container .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 60px;
+}
+
+.mapa .container .title-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.mapa .container .title-icon h2 {
+  margin: 0;
+  color: white;
+}
+
+.mapa .container p {
+  color: white;
+  margin-top: 7px;
+  padding-left: 40px;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.contact {
+  background-image: url(assets/banner-bg.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0;
+}
+
+.contact .subtitle {
+  text-align: center;
+}
+
+.contact .form-box {
+  position: relative;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  background: white;
+  border-radius: 29px;
+  margin-top: 40px;
+}
+
+.contact .form-box .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.contact .form-box .checkbox input {
+  width: 30px;
+}
+
+.contact .form-box .checkbox b a {
+  font-weight: bold;
+  color: #7C6B61;
+}
+
+.contact .form-box .popup {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  height: 100%;
+  background: #ffffffc2;
+}
+
+.contact .form-box img {
+  max-width: 310px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 260px;
+}
+
+.contact .form-box h3 {
+  font-size: 28px;
+  color: #252525;
+  font-weight: 900;
+}
+
+.contact .form-box h3::after {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 5px;
+  background: #7C6B61;
+  border-radius: 40px;
+  margin-top: 6px;
+  margin-bottom: 40px;
+}
+
+.contact .form-box input,
+.contact .form-box select {
+  padding: 14px 18px;
+  border-radius: 13px;
+  border: 1px solid #c2c2c2;
+  width: 100%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #4f514f;
+  margin: 15px 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact .form-box input::-webkit-input-placeholder,
+.contact .form-box select::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4f514f;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact .form-box input:-ms-input-placeholder,
+.contact .form-box select:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4f514f;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact .form-box input::-ms-input-placeholder,
+.contact .form-box select::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4f514f;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact .form-box input::placeholder,
+.contact .form-box select::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #4f514f;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact .form-box input:focus,
+.contact .form-box select:focus {
+  outline: none;
+  border: 1px solid #7C6B61;
+}
+
+.contact .form-box select::-ms-expand {
+  display: none;
+}
+
+.contact .form-box select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.contact .form-box textarea {
+  padding: 14px 18px;
+  border-radius: 13px;
+  border: 1px solid #c2c2c2;
+  width: 100%;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  height: 150px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  resize: none;
+}
+
+.contact .form-box textarea::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #252525 !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact .form-box textarea:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #252525 !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact .form-box textarea::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #252525 !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact .form-box textarea::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #252525 !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+.contact .form-box textarea:focus {
+  outline: none;
+  border: 1px solid #7C6B61;
+}
+
+.contact .form-box button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 18px 0;
+  border: 0;
+  border-radius: 12px;
+  margin-top: 30px;
+  background: #7C6B61;
+  color: white;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .form-box button:hover {
+  background: #7C6B61;
+}
+
+footer {
+  background: url("assets/bg-brown.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  color: white;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+}
+
+footer .container h3 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 35px;
+}
+
+footer .left-side .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+footer .left-side .social-media p {
+  font-size: 25px;
+  color: white;
+}
+
+footer .right-side {
+  padding-left: 30px;
+}
+
+footer .right-side .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+footer .right-side .social-media p {
+  font-size: 25px;
+  color: white;
+}
+
+.developer {
+  background-color: #2E2320;
+  padding: 20px 0;
+}
+
+.developer a {
+  text-align: right;
+  display: block;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
