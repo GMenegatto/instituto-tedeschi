@@ -1,0 +1,123 @@
+.banner-2 header {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-2 header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.banner-2 header nav a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: white;
+  font-size: 20px;
+  text-shadow: 0px 0px 15px #00000052;
+}
+
+.banner-2 header .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.banner-2 .waves {
+  position: absolute;
+  bottom: 0;
+  bottom: -5px;
+  left: -9px;
+  width: 100vw;
+}
+
+.banner-2 .waves img {
+  width: 101%;
+}
+
+.banner-2 .button-down {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 16px;
+}
+
+.noticia {
+  background: url("assets/bg-inauguracao.png");
+  background-color: #F6F6F6;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-news {
+  margin: 60px 0;
+}
+
+.noticia {
+  padding: 60px 0;
+}
+
+.noticia a {
+  display: block;
+  background-color: #111111;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  margin-top: 25px;
+  border-radius: 2px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video .label {
+  position: absolute;
+  bottom: 70px;
+  right: -282px;
+  background: white;
+  padding: 20px 15px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #684830;
+  -webkit-box-shadow: 0px 3px 6px 0px #00000024;
+          box-shadow: 0px 3px 6px 0px #00000024;
+}
+
+video {
+  height: 550px;
+  width: 310px;
+}
+/*# sourceMappingURL=blog.css.map */

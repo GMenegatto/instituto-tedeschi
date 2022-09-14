@@ -234,9 +234,21 @@ a {
     padding: 140px 0;
 }
 
+.center {
+    text-align: center;
+}
+
 .about {
+    .frase {
+        margin-top: 90px;
+        img {
+            max-width: 100%;
+        }
+    }
     .container {
         display: flex;
+
+
 
         .left-side {
             flex: 0 0 50%;
@@ -596,7 +608,7 @@ a {
 
             display: flex;
             align-items: center;
-            
+
             margin-bottom: 30px;
         }
 
@@ -884,16 +896,65 @@ footer {
     }
 }
 
+.bevel {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 70px;
+    }
+
+}
+
 .developer {
-    background-color: #2E2320;
+    background: url("assets/bg-brown.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 20px 0;
 
-    a {
-        text-align: right;
-        display: block;
-        color: white;
-        font-weight: 400;
-        text-decoration: none;
-        font-size: 16px;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    flex-direction: row-reverse;
+
+        .left-side {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+
+        }
+    }
+
+    .social-media {
+        display: flex;
+        gap: 20px;
+
+        .logo {
+            margin-right: 10px;
+        }
+
+
+        a {
+            width: 30px;
+            display: flex;
+            align-items: center;
+            img {
+                width: 100%;
+                display: block;
+                height: 30px;
+
+            }
+        }
+
+        .eightsix {
+            img {
+                width: 86%;
+
+            }
+        }
     }
 }

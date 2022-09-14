@@ -242,6 +242,18 @@ a {
   padding: 140px 0;
 }
 
+.center {
+  text-align: center;
+}
+
+.about .frase {
+  margin-top: 90px;
+}
+
+.about .frase img {
+  max-width: 100%;
+}
+
 .about .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1070,17 +1082,82 @@ footer .right-side .social-media p {
   color: white;
 }
 
+.bevel {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.bevel img {
+  width: 70px;
+}
+
 .developer {
-  background-color: #2E2320;
+  background: url("assets/bg-brown.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 20px 0;
 }
 
-.developer a {
-  text-align: right;
+.developer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.developer .container .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.developer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.developer .social-media .logo {
+  margin-right: 10px;
+}
+
+.developer .social-media a {
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.developer .social-media a img {
+  width: 100%;
   display: block;
-  color: white;
-  font-weight: 400;
-  text-decoration: none;
-  font-size: 16px;
+  height: 30px;
+}
+
+.developer .social-media .eightsix img {
+  width: 86%;
 }
 /*# sourceMappingURL=style.css.map */
