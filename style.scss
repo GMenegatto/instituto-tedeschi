@@ -231,7 +231,7 @@ a {
 }
 
 .section {
-    padding: 140px 0;
+    padding: 120px 0;
 }
 
 .center {
@@ -239,12 +239,16 @@ a {
 }
 
 .about {
+    padding-bottom: 90px;
+
     .frase {
         margin-top: 90px;
+
         img {
             max-width: 100%;
         }
     }
+
     .container {
         display: flex;
 
@@ -321,7 +325,7 @@ a {
 }
 
 .clinic {
-    background: url("assets/bg1.png");
+    background: url("assets/bg-sobre.png");
     background-color: #F6F6F6;
     background-size: cover;
     background-repeat: no-repeat;
@@ -464,6 +468,34 @@ a {
     .subtitle {
         text-align: center;
         margin-top: 40px;
+    }
+
+    .about-mentoria {
+        display: flex;
+
+        .logo-mentoria {
+            flex: 0 0 50%;
+            max-width: 50%;
+            display: block;
+
+            img {
+                max-width: 80%;
+                margin: 0 auto;
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .mentoria-info {
+            flex: 0 0 50%;
+            align-items: center;
+            display: flex;
+
+            p {
+                text-align: left;
+                padding-right: 80px;
+            }
+        }
     }
 
     .mentoria-contact {
@@ -914,11 +946,13 @@ footer {
     background-repeat: no-repeat;
     padding: 20px 0;
 
+
+
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    flex-direction: row-reverse;
+        flex-direction: row-reverse;
 
         .left-side {
             display: flex;
@@ -942,11 +976,26 @@ footer {
             width: 30px;
             display: flex;
             align-items: center;
+
             img {
                 width: 100%;
                 display: block;
                 height: 30px;
 
+            }
+        }
+
+        .phones {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+
+            a {
+                display: block;
+                width: 100%;
+                color: white;
+                font-weight: bold;
             }
         }
 

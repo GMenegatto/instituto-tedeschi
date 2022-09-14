@@ -239,11 +239,15 @@ a {
 }
 
 .section {
-  padding: 140px 0;
+  padding: 120px 0;
 }
 
 .center {
   text-align: center;
+}
+
+.about {
+  padding-bottom: 90px;
 }
 
 .about .frase {
@@ -353,7 +357,7 @@ a {
 }
 
 .clinic {
-  background: url("assets/bg1.png");
+  background: url("assets/bg-sobre.png");
   background-color: #F6F6F6;
   background-size: cover;
   background-repeat: no-repeat;
@@ -542,6 +546,44 @@ a {
 .mentoria .subtitle {
   text-align: center;
   margin-top: 40px;
+}
+
+.mentoria .about-mentoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mentoria .about-mentoria .logo-mentoria {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  display: block;
+}
+
+.mentoria .about-mentoria .logo-mentoria img {
+  max-width: 80%;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+}
+
+.mentoria .about-mentoria .mentoria-info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mentoria .about-mentoria .mentoria-info p {
+  text-align: left;
+  padding-right: 80px;
 }
 
 .mentoria .mentoria-contact {
@@ -1155,6 +1197,27 @@ footer .right-side .social-media p {
   width: 100%;
   display: block;
   height: 30px;
+}
+
+.developer .social-media .phones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+}
+
+.developer .social-media .phones a {
+  display: block;
+  width: 100%;
+  color: white;
+  font-weight: bold;
 }
 
 .developer .social-media .eightsix img {
