@@ -258,6 +258,72 @@ a {
   max-width: 100%;
 }
 
+.about .fotos-clinica {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1183px;
+  gap: 30px;
+  margin-top: 150px;
+  min-height: 555px;
+}
+
+.about .fotos-clinica .clinica-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.about .fotos-clinica .clinica-item .image {
+  position: relative;
+  display: block;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.about .fotos-clinica .clinica-item .label {
+  font-size: 20px;
+  padding: 2px 14px;
+  border-radius: 40px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 27px;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.733);
+}
+
+.about .fotos-clinica .clinica-item.active {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 36%;
+          flex: 0 0 36%;
+}
+
+.about .fotos-clinica .clinica-item.active .image {
+  opacity: 1;
+}
+
+.about .fotos-clinica img {
+  width: 100%;
+}
+
 .about .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1218,6 +1284,7 @@ footer .right-side .social-media p {
   width: 100%;
   color: white;
   font-weight: bold;
+  font-family: 'Montserrat';
 }
 
 .developer .social-media .eightsix img {

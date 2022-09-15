@@ -80,6 +80,34 @@
             </div>
         </div>
 
+        <div class="container fotos-clinica">
+            <div class="clinica-item">
+                <div class="image">
+                    <img src="assets/recepcao.png" alt="">
+                    <div class="label">
+                        <p>Recepção</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clinica-item active">
+                <div class="image">
+                    <img src="assets/consultorio.png" alt="">
+                    <div class="label">
+                        <p>Consultório</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clinica-item">
+                <div class="image">
+                    <img src="assets/laboratorio.png" alt="">
+                    <div class="label">
+                        <p>Laboratório</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <div class="frase container">
             <img src="assets/frase_website.png" alt="">
         </div>
@@ -446,7 +474,23 @@
 
     </div>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        const containers = document.querySelectorAll('.clinica-item');
+
+        containers.forEach(f => f.addEventListener('mouseenter', function () {
+            containers.forEach(e => {
+                 e.classList.remove('active');
+            })
+            f.classList.add('active')
+        }))
+    </script>
+
 </body>
+
+
 
 <script src="app.js"></script>
 
