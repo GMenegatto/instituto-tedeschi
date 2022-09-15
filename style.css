@@ -652,37 +652,6 @@ a {
   padding-right: 80px;
 }
 
-.mentoria .mentoria-contact {
-  max-width: 790px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 90px;
-  border-top: 1px solid #707070;
-  border-bottom: 1px solid #707070;
-  padding: 40px 0;
-}
-
-.mentoria .mentoria-contact .title {
-  max-width: 600px;
-  display: block;
-  margin: 0 auto;
-}
-
-.mentoria .mentoria-contact a {
-  display: block;
-  background-color: #111111;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
-  margin: 0 auto;
-  font-weight: bold;
-  color: white;
-  font-size: 22px;
-  margin-top: 25px;
-  border-radius: 2px;
-  padding: 10px 15px;
-}
-
 .mentoria .title2 {
   margin: 60px 0;
 }
@@ -710,6 +679,71 @@ a {
 
 .mentoria .services .service img {
   max-width: 387px;
+}
+
+.partners {
+  background: #f4f4f4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(white));
+  background: linear-gradient(180deg, #f4f4f4 0%, white 100%);
+  position: relative;
+}
+
+.partners .seta {
+  width: 74px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+.partners .partners-container {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.partners .mentoria-contact {
+  max-width: 790px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 90px;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  padding: 40px 0;
+}
+
+.partners .mentoria-contact .title {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
+.partners .mentoria-contact a {
+  display: block;
+  background-color: #111111;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
+  font-weight: bold;
+  color: white;
+  font-size: 22px;
+  margin-top: 25px;
+  border-radius: 2px;
+  padding: 10px 15px;
 }
 
 .our-insta {

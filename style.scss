@@ -552,6 +552,57 @@ a {
         }
     }
 
+    
+
+
+
+    .title2 {
+        margin: 60px 0;
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+
+        .service {
+            img {
+                max-width: 387px;
+            }
+
+            flex: 0 0 33.33%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.partners {
+    background: rgb(244,244,244);
+    background: linear-gradient(180deg, rgba(244,244,244,1) 0%, rgba(255,255,255,1) 100%);
+    position: relative;
+
+    .seta {
+        width: 74px;
+        display: block;
+        margin: 0 auto;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 0;
+    }
+
+    .partners-container {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+    }
+
     .mentoria-contact {
 
         max-width: 790px;
@@ -580,28 +631,6 @@ a {
             margin-top: 25px;
             border-radius: 2px;
             padding: 10px 15px;
-        }
-    }
-
-
-
-    .title2 {
-        margin: 60px 0;
-    }
-
-    .services {
-        display: flex;
-        flex-wrap: wrap;
-
-        .service {
-            img {
-                max-width: 387px;
-            }
-
-            flex: 0 0 33.33%;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
         }
     }
 }
