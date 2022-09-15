@@ -89,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="clinica-item active">
+            <div class="clinica-item active default">
                 <div class="image">
                     <img src="assets/consultorio.png" alt="">
                     <div class="label">
@@ -228,7 +228,13 @@
             </div>
 
             <div class="info-3">
-                <img src="assets/hifu.png">
+                <div class="image">
+                    <img src="assets/hifu.png">
+                    <div class="button">
+                        <img src="assets/seta-video.svg" alt="">
+                        <p>Assista ao vídeo</p>
+                    </div>
+                </div>
 
                 <div class="info-container">
                     <div class="info">
@@ -360,6 +366,10 @@
                     <img src="assets/insta-grey.svg" alt="" srcset="">
                     <p>/mentoria_cosmeticos</p>
                 </div>
+                <div class="social-media">
+                    <img src="assets/linkedin-dark.svg" alt="" srcset="">
+                    <p>Midia Tedeschi</p>
+                </div>
             </div>
         </div>
     </section>
@@ -444,33 +454,6 @@
         </div>
     </section>
 
-    <!-- <footer class="">
-        <div class="container">
-            <div class="left-side">
-                <h3>Contato</h3>
-                <div class="social-media">
-                    <img src="assets/email-icon.svg" alt="" srcset="">
-                    <p>email.email@contato.com.br</p>
-                </div>
-                <div class="social-media">
-                    <img src="assets/phone-icon.svg" alt="" srcset="">
-                    <p>(19) 9 9999-9999</p>
-                </div>
-            </div>
-            <div class="right-side">
-                <h3>Redes Sociais</h3>
-                <div class="social-media">
-                    <img src="assets/social-white.svg" alt="" srcset="">
-                    <p>/instituto_tedeschi</p>
-                </div>
-                <div class="social-media">
-                    <img src="assets/insta-white.svg" alt="" srcset="">
-                    <p>/mentoria_cosmeticos</p>
-                </div>
-            </div>
-        </div>
-
-    </footer> -->
     <div class="developer ">
         <div class="container">
             <div class="left-side">
@@ -480,6 +463,8 @@
             </div>
             <div class="social-media">
                 <img class="logo" src="assets/logo.svg" alt="">
+                <a class="eightsix linkedin" href="https://www.linkedin.com/in/m%C3%ADdia-tedeschi-61a7a427/"
+                    target="_blank"><img src="assets/linkedin-white.svg"></a>
                 <a class="eightsix" href="midia@institutotedeschi.com.br" target="_blank"><img
                         src="assets/email-icon.svg"></a>
 
@@ -487,9 +472,12 @@
                 <a href="https://www.facebook.com/profile.php?id=100083145731947" target="_blank"><img
                         src="assets/face.svg"></a>
 
+
                 <div class="phones">
-                    <a href="tel:019999988836" target="_blank">(19) 99998-8836</a>
-                    <a href="tel:011972966233" target="_blank">(11) 97296-6233</a>
+                    <a href="https://api.whatsapp.com/send?phone=55019999988836&text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Instituto%20Tedeschi"
+                        target="_blank">(19) 99998-8836</a>
+                    <a href="https://api.whatsapp.com/send?phone=55011972966233&text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Instituto%20Tedeschi"
+                        target="_blank">(11) 97296-6233</a>
                 </div>
             </div>
         </div>
@@ -501,12 +489,19 @@
 
     <script>
         const containers = document.querySelectorAll('.clinica-item');
+        const defaultItem = document.querySelector('.default');
 
         containers.forEach(f => f.addEventListener('mouseenter', function () {
             containers.forEach(e => {
                 e.classList.remove('active');
             })
             f.classList.add('active')
+        }))
+
+        containers.forEach(f => f.addEventListener('mouseleave', function () {
+
+            f.classList.remove('active')
+            defaultItem.classList.add('active')
         }))
     </script>
 
