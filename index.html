@@ -24,7 +24,7 @@
 
 </head>
 
-<body>
+<body id="body">
 
     <section class="banner">
         <div class="container">
@@ -112,6 +112,24 @@
             <img src="assets/frase_website.png" alt="">
         </div>
     </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+
+
+        <div id="hold_video" class="hold_video">
+            <span id="close-modal" class="close-modal">&times;</span>
+            <video controls>
+                <source src="assets/video-hifu.mp4" type="video/mp4">
+                <object>
+                    <embed src="assets/video-hifu.mp4" type="application/x-shockwave-flash"
+                        allowfullscreen="false" allowscriptaccess="always">
+                </object>
+                Formato não suportado
+            </video>
+        </div>
+
+    </div>
 
 
 
@@ -230,7 +248,7 @@
             <div class="info-3">
                 <div class="image">
                     <img src="assets/hifu.png">
-                    <div class="button">
+                    <div id="button-modal1" class="button">
                         <img src="assets/seta-video.svg" alt="">
                         <p>Assista ao vídeo</p>
                     </div>
@@ -505,10 +523,12 @@
         }))
     </script>
 
+<script src="app.js"></script>
+
+
 </body>
 
 
 
-<script src="app.js"></script>
 
 </html>
