@@ -445,6 +445,8 @@ a {
             display: flex;
             margin: 0 auto;
             margin-left: 20px;
+            flex: 1;
+            margin-bottom: 15px;
 
             .card {
                 padding: 30px 25px;
