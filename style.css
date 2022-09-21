@@ -715,6 +715,7 @@ a {
   background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(white));
   background: linear-gradient(180deg, #f4f4f4 0%, white 100%);
   position: relative;
+  overflow: hidden;
 }
 
 .partners .seta {
@@ -731,6 +732,7 @@ a {
 }
 
 .partners .partners-container {
+  margin-bottom: 30px;
   margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -742,6 +744,16 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.partners .partner {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%;
+}
+
+.partners .partner img {
+  max-width: 100%;
 }
 
 .partners .mentoria-contact {
@@ -1472,5 +1484,122 @@ footer .right-side .social-media p {
   width: 100%;
   background: black;
   height: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 760px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .about .container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .container .left-side {
+    display: block;
+  }
+  .about .container .left-side img {
+    max-width: 100%;
+  }
+  .about .container .right-side .title {
+    margin-top: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  .about .container .right-side .subtitle {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .about .container .buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .fotos-clinica {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 360px;
+  }
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-400px * 7));
+            transform: translateX(calc(-400px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-400px * 7));
+            transform: translateX(calc(-400px * 7));
+  }
+}
+
+.slider {
+  height: 100%;
+  margin: 60px auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider::before, .slider::after {
+  background: -webkit-gradient(linear, left top, right top, from(#f4f4f4), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, #f4f4f4 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  -webkit-animation: scroll 10s linear infinite;
+          animation: scroll 10s linear infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(400px * 14);
+}
+
+.slider .slide {
+  height: 100%;
+  width: 400px;
 }
 /*# sourceMappingURL=style.css.map */
