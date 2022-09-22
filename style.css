@@ -164,6 +164,10 @@ a {
   overflow: hidden;
 }
 
+.banner .center-logo {
+  display: none;
+}
+
 .banner header {
   padding: 60px 0;
   display: -webkit-box;
@@ -474,6 +478,7 @@ a {
   margin: 0 auto;
   display: block;
   width: 700px;
+  max-width: 100%;
   height: 1px;
   border-bottom: 1px solid #7070705b;
   margin-top: 70px;
@@ -1490,6 +1495,35 @@ footer .right-side .social-media p {
   .container {
     max-width: 760px;
   }
+  .subtitle {
+    text-align: center !important;
+  }
+  .banner {
+    background: url("assets/bg_1200px.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .banner header nav {
+    display: none;
+  }
+  .banner .center-logo {
+    width: 470px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 0;
+    top: 270px;
+  }
+  .banner .center-logo img {
+    max-width: 100%;
+    position: relative;
+    left: -18px;
+  }
   .title {
     font-size: 28px;
   }
@@ -1507,6 +1541,9 @@ footer .right-side .social-media p {
   }
   .about .container .left-side img {
     max-width: 100%;
+  }
+  .about .container .right-side {
+    margin-top: 60px;
   }
   .about .container .right-side .title {
     margin-top: 20px;
@@ -1529,11 +1566,171 @@ footer .right-side .social-media p {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team .person {
+    margin-bottom: 40px;
+  }
+  .clinic .info-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clinic .info-1 .subtitle {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .clinic .info-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clinic .left-side {
+    display: none;
+  }
+  .clinic .right-side .cards {
+    margin: 0;
+    width: 100%;
+  }
+  .clinic .info-3 img {
+    max-width: 100%;
+  }
+  .mentoria .about-mentoria {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mentoria .about-mentoria .mentoria-info .subtitle {
+    margin: 0;
+  }
+  .mentoria .about-mentoria .mentoria-info p {
+    padding: 0;
+  }
+  .mentoria .services .service {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    padding: 0 15px;
+  }
+  .mentoria .services .service img {
+    max-width: 100%;
+  }
+  .our-insta .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .our-insta .container .right-side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .our-insta .container .right-side h3 {
+    margin-bottom: 20px;
+  }
+  .mapa .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 60px;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 741px) {
   .container {
     max-width: 360px;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  .clinic .info-2 .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .butons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .fotos-clinica {
+    display: none !important;
+  }
+  .frase {
+    display: none !important;
+  }
+  .our-insta .right-side h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .our-insta .right-side .social-media p {
+    font-size: 20px;
+  }
+  .news .news-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clinic .info-3 .info-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mapa .container .left-side {
+    padding: 0;
+  }
+  .mapa .container p {
+    padding: 0;
+  }
+  iframe {
+    max-width: 100%;
+  }
+  .developer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .developer .container .phones {
+    gap: 15px;
+  }
+  .developer .container .phones a {
+    font-size: 14px;
+  }
+  .developer .social-media .logo {
+    display: none;
   }
 }
 
@@ -1590,8 +1787,8 @@ footer .right-side .social-media p {
 }
 
 .slider .slide-track {
-  -webkit-animation: scroll 10s linear infinite;
-          animation: scroll 10s linear infinite;
+  -webkit-animation: scroll 15s linear infinite;
+          animation: scroll 15s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

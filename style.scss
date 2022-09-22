@@ -159,6 +159,12 @@ a {
     background: url("assets/CAPA_PRINCIPAL.png");
     height: 100vh;
 
+    .center-logo {
+        display: none;
+    }
+
+
+
     background-size: cover;
     background-position: center;
     position: relative;
@@ -413,6 +419,7 @@ a {
         margin: 0 auto;
         display: block;
         width: 700px;
+        max-width: 100%;
         height: 1px;
         border-bottom: 1px solid #7070705b;
         margin-top: 70px;
@@ -1261,6 +1268,43 @@ footer {
         max-width: 760px;
     }
 
+    .subtitle {
+        text-align: center !important;
+    }
+
+    .banner {
+        background: url("assets/bg_1200px.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        header {
+            nav {
+                display: none;
+            }
+        }
+
+
+        .center-logo {
+            width: 470px;
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            text-align: center;
+            bottom: 0;
+            top: 270px;
+
+            img {
+                max-width: 100%;
+                position: relative;
+                left: -18px;
+            }
+        }
+    }
+
     .title {
         font-size: 28px;
     }
@@ -1280,6 +1324,8 @@ footer {
             }
 
             .right-side {
+                margin-top: 60px;
+
                 .title {
                     margin-top: 20px;
                     text-align: center;
@@ -1304,69 +1350,249 @@ footer {
         }
 
     }
+
+    .team {
+        flex-direction: column;
+
+        .person {
+            margin-bottom: 40px;
+        }
+    }
+
+    .clinic {
+        .info-1 {
+            flex-direction: column;
+
+            .subtitle {
+                text-align: center;
+                margin: 25px 0;
+            }
+        }
+
+        .info-2 {
+            flex-direction: column;
+        }
+
+        .left-side {
+            display: none;
+        }
+
+        .right-side {
+            .cards {
+                margin: 0;
+                width: 100%;
+            }
+        }
+
+        .info-3 {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .mentoria {
+        .about-mentoria {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .mentoria-info {
+                .subtitle {
+                    margin: 0;
+                }
+
+                p {
+                    padding: 0;
+                }
+            }
+        }
+
+        .services {
+            .service {
+                flex: 0 0 50%;
+
+                padding: 0 15px;
+
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .our-insta {
+        .container {
+            flex-direction: column;
+
+            .right-side {
+                h3 {
+                    margin-bottom: 20px;
+                }
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+    .mapa {
+        .container {
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+        }
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 741px) {
     .container {
         max-width: 360px;
     }
 
+    img {
+        max-width: 100% !important;
+    }
 
+    .clinic {
+        .info-2 {
+            .cards {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
 
+    .butons {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fotos-clinica {
+        display: none !important;
+    }
+
+    .frase {
+        display: none !important;
+    }
+
+    .our-insta .right-side h3 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .our-insta .right-side .social-media p {
+        font-size: 20px;
+    }
+
+    .news {
+        .news-box {
+            flex-direction: column;
+        }
+    }
+
+    .clinic .info-3 .info-container {
+        flex-direction: column;
+    }
+
+    .mapa {
+
+        .container {
+            .left-side {
+                padding: 0;
+            }
+
+            p {
+                padding: 0;
+            }
+        }
+    }
+
+    iframe {
+        max-width: 100%;
+    }
+
+    .developer {
+        .container {
+            flex-direction: column-reverse;
+            gap: 30px;
+
+            .phones {
+                gap: 15px;
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .social-media {
+            .logo {
+                display: none;
+            }
+        }
+    }
 }
 
 
 
 @mixin white-gradient {
-	background: linear-gradient(to right,  #f4f4f4 0%,rgba(255,255,255,0) 100%);
+    background: linear-gradient(to right, #f4f4f4 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-$animationSpeed: 10s;
+$animationSpeed: 15s;
 
 // Animation
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-400px * 7))}
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-400px * 7))
+    }
 }
 
 
 // Styling
 .slider {
-	height: 100%;
-	margin: 60px auto;
-	overflow:hidden;
-	position: relative;
-	width: 100%;
-	
-	&::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-        height: 100%;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
+    height: 100%;
+    margin: 60px auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
 
-	&::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(400px * 14);
-	}
-	
-	.slide {
-		height: 100%;
-		width: 400px;
-	}
+    &::before,
+    &::after {
+        @include white-gradient;
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+
+    &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slide-track {
+        animation: scroll $animationSpeed linear infinite;
+        display: flex;
+        width: calc(400px * 14);
+    }
+
+    .slide {
+        height: 100%;
+        width: 400px;
+    }
 }
