@@ -155,8 +155,12 @@ a {
   text-decoration: none;
 }
 
+.mobile {
+  display: none;
+}
+
 .banner {
-  background: url("assets/CAPA_PRINCIPAL.png");
+  background: url("assets/teste123.png");
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -869,6 +873,13 @@ a {
   text-decoration: none;
 }
 
+.news .news-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
 .news .news-box {
   background: white;
   max-width: -webkit-max-content;
@@ -885,11 +896,19 @@ a {
   padding: 20px;
   -webkit-box-shadow: 0px 3px 6px #373f7e2a;
           box-shadow: 0px 3px 6px #373f7e2a;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
   gap: 15px;
 }
 
+.news .news-box img {
+  max-width: 280px;
+}
+
 .news .news-box h3 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold;
   color: #271D1B;
   margin-bottom: 20px;
@@ -911,7 +930,7 @@ a {
 }
 
 .news .news-box p {
-  font-size: 20px;
+  font-size: 18px;
   max-width: 370px;
   display: block;
   margin-bottom: 30px;
@@ -919,7 +938,7 @@ a {
 
 .news .news-box a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   color: #271D1B;
   gap: 10px;
   display: -webkit-box;
@@ -1659,14 +1678,60 @@ footer .right-side .social-media p {
             align-items: center;
     gap: 60px;
   }
+  .news .news-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news .news-container .news-box {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 741px) {
   .container {
     max-width: 360px;
   }
+  .title {
+    font-size: 24px;
+  }
+  .no-mobile {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .section {
+    padding: 80px 0;
+  }
   img {
     max-width: 100% !important;
+  }
+  .banner .center-logo img {
+    left: -33px;
+    width: 330px;
+    top: 0px;
+  }
+  .pt0-mobile {
+    padding-top: 0;
+  }
+  .mb0-mobile {
+    margin-bottom: 0;
+  }
+  .news {
+    background: none;
+  }
+  .news .news-box h3 {
+    font-size: 24px;
+  }
+  .banner .waves {
+    width: 104vw;
+    bottom: -3px;
   }
   .clinic .info-2 .cards {
     -webkit-box-orient: vertical;
@@ -1674,6 +1739,16 @@ footer .right-side .social-media p {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 20px;
+  }
+  .about .container .right-side .buttons {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clinic .info-3 .image .button {
+    display: none;
   }
   .butons {
     -webkit-box-orient: vertical;
@@ -1685,6 +1760,9 @@ footer .right-side .social-media p {
   .fotos-clinica {
     display: none !important;
   }
+  .label {
+    display: none;
+  }
   .frase {
     display: none !important;
   }
@@ -1695,17 +1773,94 @@ footer .right-side .social-media p {
   .our-insta .right-side .social-media p {
     font-size: 20px;
   }
+  .partners .partner {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+  }
+  .slider::before,
+  .slider::after {
+    display: none;
+  }
+  .clinic .info-2 .title {
+    margin-bottom: 30px;
+  }
+  .clinic .info-3 {
+    padding: 0;
+    margin: 20px 0px;
+  }
+  .clinic .info-3 .info {
+    margin: 0;
+  }
+  .clinic .info-3 .info h2 {
+    text-align: center !important;
+  }
+  .clinic .info-3 .info p {
+    text-align: center;
+  }
+  .special {
+    padding: 0 !important;
+    padding-top: 20px !important;
+  }
+  .clinic .info-2 .cards .card {
+    padding: 0;
+    margin: 0;
+  }
+  .clinic .info-2 .cards .card h3 {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .bg-white-mobile {
+    background: white !important;
+  }
+  .topic {
+    background: #f9f9f9;
+    padding: 3px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .topic img {
+    display: none;
+  }
+  .our-insta .right-side {
+    padding: 0;
+  }
+  .our-insta .right-side .social-media {
+    margin: 11px 0;
+  }
+  .our-insta .left-side {
+    max-width: 100%;
+  }
   .news .news-box {
+    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .news .news-box .date {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .news .news-box a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .clinic .info-3 .info-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .mapa .container {
+    gap: 25px;
+  }
+  .mapa .container .title-icon img {
+    width: 17px;
   }
   .mapa .container .left-side {
     padding: 0;
@@ -1740,8 +1895,8 @@ footer .right-side .social-media p {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-400px * 7));
-            transform: translateX(calc(-400px * 7));
+    -webkit-transform: translateX(calc(-400px * 11));
+            transform: translateX(calc(-400px * 11));
   }
 }
 
@@ -1751,8 +1906,8 @@ footer .right-side .social-media p {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(calc(-400px * 7));
-            transform: translateX(calc(-400px * 7));
+    -webkit-transform: translateX(calc(-400px * 11));
+            transform: translateX(calc(-400px * 11));
   }
 }
 
@@ -1787,12 +1942,12 @@ footer .right-side .social-media p {
 }
 
 .slider .slide-track {
-  -webkit-animation: scroll 15s linear infinite;
-          animation: scroll 15s linear infinite;
+  -webkit-animation: scroll 20s linear infinite;
+          animation: scroll 20s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: calc(400px * 14);
+  width: calc(400px * 22);
 }
 
 .slider .slide {

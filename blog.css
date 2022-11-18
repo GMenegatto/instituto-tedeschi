@@ -120,4 +120,46 @@ video {
   height: 550px;
   width: 310px;
 }
+
+h3 {
+  font-size: 32px;
+  color: #2E2320;
+  font-weight: bold;
+  margin: 40px;
+  text-align: center;
+}
+
+.fotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fotos .foto {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  max-width: 33%;
+  padding: 0 10px;
+}
+
+.fotos .foto img {
+  max-width: 100%;
+  display: block;
+}
+
+@media only screen and (max-width: 741px) {
+  .fotos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .fotos .foto {
+    max-width: 100%;
+  }
+}
 /*# sourceMappingURL=blog.css.map */

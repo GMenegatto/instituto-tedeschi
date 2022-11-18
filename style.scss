@@ -155,12 +155,17 @@ a {
     text-decoration: none;
 }
 
+.mobile {
+    display: none;
+}
+
 .banner {
-    background: url("assets/CAPA_PRINCIPAL.png");
+    background: url("assets/teste123.png");
     height: 100vh;
 
     .center-logo {
         display: none;
+
     }
 
 
@@ -743,6 +748,11 @@ a {
         text-decoration: none;
     }
 
+    .news-container {
+        display: flex;
+        gap: 15px;
+    }
+
     .news-box {
         background: white;
         max-width: max-content;
@@ -752,11 +762,17 @@ a {
         margin: 0 auto;
         padding: 20px;
         box-shadow: 0px 3px 6px #373f7e2a;
+        flex: 0 0 50%;
+        max-width: 50%;
 
         gap: 15px;
 
+        img {
+            max-width: 280px;
+        }
+
         h3 {
-            font-size: 30px;
+            font-size: 26px;
             font-weight: bold;
             color: #271D1B;
             margin-bottom: 20px;
@@ -776,7 +792,7 @@ a {
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
             max-width: 370px;
             display: block;
             margin-bottom: 30px;
@@ -784,7 +800,7 @@ a {
 
         a {
             text-decoration: none;
-            font-size: 20px;
+            font-size: 18px;
             color: #271D1B;
             gap: 10px;
 
@@ -1445,6 +1461,19 @@ footer {
             gap: 60px;
         }
     }
+
+    .news {
+        .news-container {
+            flex-direction: column;
+
+
+            .news-box {
+                flex: 1;
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 741px) {
@@ -1452,8 +1481,55 @@ footer {
         max-width: 360px;
     }
 
+    .title {
+        font-size: 24px;
+    }
+
+    .no-mobile {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
     img {
         max-width: 100% !important;
+    }
+
+    .banner {
+        .center-logo {
+            img {
+                left: -33px;
+                width: 330px;
+                top: 0px;
+            }
+        }
+    }
+
+    .pt0-mobile {
+        padding-top: 0;
+    }
+
+    .mb0-mobile {
+        margin-bottom: 0;
+    }
+
+    .news {
+        background: none;
+
+        .news-box h3 {
+            font-size: 24px;
+        }
+    }
+
+    .banner .waves {
+        width: 104vw;
+        bottom: -3px;
     }
 
     .clinic {
@@ -1465,6 +1541,15 @@ footer {
         }
     }
 
+    .about .container .right-side .buttons {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .clinic .info-3 .image .button {
+        display: none;
+    }
+
     .butons {
         flex-direction: column;
         text-align: center;
@@ -1472,6 +1557,10 @@ footer {
 
     .fotos-clinica {
         display: none !important;
+    }
+
+    .label {
+        display: none;
     }
 
     .frase {
@@ -1487,9 +1576,96 @@ footer {
         font-size: 20px;
     }
 
+    .partners .partner {
+        flex: 0 0 40%;
+    }
+
+    .slider::before,
+    .slider::after {
+        display: none;
+    }
+
+    .clinic {
+        .info-2 {
+            .title {
+                margin-bottom: 30px;
+            }
+        }
+
+        .info-3 {
+            padding: 0;
+            margin: 20px 0px;
+
+            .info {
+                margin: 0;
+
+                h2 {
+                    text-align: center !important;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .special {
+        padding: 0 !important;
+        padding-top: 20px !important;
+    }
+
+    .clinic .info-2 .cards .card {
+        padding: 0;
+        margin: 0;
+
+        h3 {
+            text-align: center;
+            margin-top: 15px;
+        }
+    }
+
+    .bg-white-mobile {
+        background: white !important;
+    }
+
+    .topic {
+        background: #f9f9f9;
+        padding: 3px;
+        justify-content: center;
+        text-align: center;
+
+        img {
+            display: none;
+        }
+    }
+
+    .our-insta {
+        .right-side {
+            padding: 0;
+
+            .social-media {
+                margin: 11px 0;
+            }
+        }
+
+        .left-side {
+            max-width: 100%;
+        }
+    }
+
     .news {
         .news-box {
+            text-align: center;
             flex-direction: column;
+
+            .date {
+                justify-content: center;
+            }
+
+            a {
+                justify-content: center;
+            }
         }
     }
 
@@ -1500,6 +1676,14 @@ footer {
     .mapa {
 
         .container {
+            gap: 25px;
+
+            .title-icon {
+                img {
+                    width: 17px;
+                }
+            }
+
             .left-side {
                 padding: 0;
             }
@@ -1542,7 +1726,7 @@ footer {
     background: linear-gradient(to right, #f4f4f4 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-$animationSpeed: 15s;
+$animationSpeed: 20s;
 
 // Animation
 @keyframes scroll {
@@ -1551,7 +1735,7 @@ $animationSpeed: 15s;
     }
 
     100% {
-        transform: translateX(calc(-400px * 7))
+        transform: translateX(calc(-400px * 11))
     }
 }
 
@@ -1588,7 +1772,7 @@ $animationSpeed: 15s;
     .slide-track {
         animation: scroll $animationSpeed linear infinite;
         display: flex;
-        width: calc(400px * 14);
+        width: calc(400px * 22);
     }
 
     .slide {
